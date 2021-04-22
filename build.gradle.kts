@@ -23,8 +23,8 @@ plugins {
     id("com.github.ben-manes.versions") version "0.20.0"
 }
 
-tasks.withType<Sign>().forEach{
-    it.enabled = false
+tasks.withType<Sign>().configureEach {
+    onlyIf { project.extra["isReleaseVersion"] as Boolean }
 }
 
 allprojects {
