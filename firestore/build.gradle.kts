@@ -55,7 +55,7 @@ dependencies {
     compileOnly(Config.Libs.Androidx.paging)
     annotationProcessor(Config.Libs.Androidx.lifecycleCompiler)
 
-    lintChecks(project(":lint"))
+//    lintChecks(project(":lint"))
 
     androidTestImplementation(Config.Libs.Test.archCoreTesting)
     androidTestImplementation(Config.Libs.Test.core)

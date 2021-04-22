@@ -22,7 +22,8 @@ include(
         ":firestore", 
         ":storage",
 
-        ":lint",
+ //       ":lint",
         ":proguard-tests", 
+        ":internal:lint", 
         ":internal:lintchecks"
 )
