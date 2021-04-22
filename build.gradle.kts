@@ -24,7 +24,7 @@ plugins {
 }
 
 tasks.withType<Sign>().configureEach {
-    onlyIf { project.extra["isReleaseVersion"] as Boolean }
+    onlyIf { false } //project.extra["isReleaseVersion"] as Boolean }
 }
 
 allprojects {
